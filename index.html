@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Send Demo</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="#"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="contact-us">
+        <div class="upper-detail">
+          <h3>Contact Us</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro neque aspernatur ut excepturi, quos, rem modi ea ipsam recusandae magni illum earum sunt at cum delectus obcaecati, optio itaque fuga minus eos.
+          </p>
+        </div>
+        <div class="lower-detail">
+          <div class="left-box">
+            <div class="left-sec address">
+              <span class="icon"
+                ><i class="fa fa-location-arrow"></i>
+                <h3>Address</h3></span
+              >
+              <span class="minor-detail">Pokhara-17,Kaski</span>
+              <span class="minor-detail">Nepal</span>
+              <span class="minor-detail">33700</span>
+            </div>
+            <div class="left-sec phone">
+              <span class="icon"
+                ><i class="fa fa-phone-square"></i>
+                <h3>Phone</h3></span
+              >
+              <span class="minor-detail">+9779800000001</span>
+            </div>
+            <div class="left-sec email">
+              <span class="icon"
+                ><i class="fa fa-envelope-square"></i>
+                <h3>Email</h3></span
+              >
+              <span class="minor-detail">paudelsudip555@gmail.com</span>
+            </div>
+          </div>
+          <div class="right-box">
+            <h3>Send Message</h3>
+            <form action="../email.php" method="POST" name="my-form">
+              <div class="pre-text text-for-name">Full Name</div>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                autocomplete="on"
+              />
+              <div class="pre-text text-for-email">Email</div>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                autocomplete="on"
+              />
+              <div class="pre-text text-for-message">Your Short Message..</div>
+              <input type="text" name="message" id="message" required />
+              <input class="submit-btn" type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
